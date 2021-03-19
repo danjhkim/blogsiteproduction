@@ -1,0 +1,132 @@
+/* create new blog form */
+.create {
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input, .create textarea {
+  width: 50%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  display: block;
+  border: 1px solid #ddd;
+  outline:none;
+}
+
+.create input {
+    width:75%;
+}
+
+.create textarea {
+    width:120%;
+    height: 25vw;
+}
+
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  width:8em;
+}
+
+.red  {
+    border: 2px solid red !important;
+}
+
+.none{
+    border:none;    
+}
+
+.textformat input[type="text"] {
+    font-size:1.2em
+}
+
+.textformat textarea[type="text"] {
+    font-size:1.5em
+}
+
+.buttonContainer {
+    width:120%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox {
+    font-size: .8em;
+    display: flex;
+    align-items: center;
+    width:60%;
+}
+
+.checking {
+    width:2em  !important;
+    height:2em;
+}
+
+.checkbox label {
+    margin-right: 1em;
+}
+
+@media screen and (max-width: 900px){
+.create textarea {
+    width:120%;
+    height: 25vw;
+    box-sizing: border-box;
+}
+
+.buttonContainer {
+    width:120%;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+    .create textarea {
+    width:120%;
+    height: 40vw;
+    box-sizing: border-box;
+}
+
+.create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  width:4em;
+  height: 3em;
+}
+
+}
+
+@media screen and (max-width: 418px) {
+    .checkbox label {
+        width:5em;
+        margin:none;
+    }
+
+    .create textarea {
+    width:120%;
+    height: 60vw;
+    box-sizing: border-box;
+}
+
+
+}
