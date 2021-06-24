@@ -17,7 +17,6 @@ export class LoginStore extends React.Component {
 	};
 
 	signIn = (id, name) => {
-		alert('Logged In');
 		this.setState({
 			isSignedIn: true,
 			userId: id,
@@ -32,7 +31,6 @@ export class LoginStore extends React.Component {
 	};
 
 	signOut = () => {
-		alert('Logged Out');
 		this.setState({
 			isSignedIn: false,
 			userId: null,

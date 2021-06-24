@@ -1,6 +1,5 @@
 {
     "name": "blogsite",
-    "homepage": "https://my-json-server.typicode.com/danjhkim/JSON-SERVER-basic-",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
