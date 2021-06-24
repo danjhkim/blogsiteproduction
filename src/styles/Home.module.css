@@ -1,175 +1,187 @@
 .home {
-  margin: 0;
+	margin: 0;
 }
 
 .hero {
-  background-size: 160%;
-  background-repeat: no-repeat;
-  background-position: left top;
-  animation: slide 35s linear infinite ;
-  transform: translate3d(0,0,0);
-  width:100%;
-  height:auto;
+	background-size: 160%;
+	background-repeat: no-repeat;
+	background-position: left top;
+	animation: slide 35s linear infinite;
+	transform: translate3d(0, 0, 0);
+	width: 100%;
+	height: auto;
 }
 
 .hero:before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background: rgba(76,56,75,.8)
+	content: '';
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background: rgba(76, 56, 75, 0.8);
 }
 
 .hero__content {
-  z-index: 101;
-  position: relative;
+	z-index: 101;
+	position: relative;
 }
 
 @keyframes slide {
-  0%   { background-position: left top}
-  25%   { background-position: right top }
-  50% { background-position: right bottom}
-  75%   { background-position: left bottom }
-  100% { background-position: left top}
+	0% {
+		background-position: left top;
+	}
+	25% {
+		background-position: right top;
+	}
+	50% {
+		background-position: right bottom;
+	}
+	75% {
+		background-position: left bottom;
+	}
+	100% {
+		background-position: left top;
+	}
 }
 
 .hero h1 {
-  font-size: 50px;
-  font-weight: 100;
-  color: white;
-  margin: 0;
+	font-size: 50px;
+	font-weight: 100;
+	color: white;
+	margin: 0;
 }
 
 .hero__content {
-    padding: 200px 100px;
-    max-width: 310px;
+	padding: 200px 100px;
+	max-width: 310px;
 }
 
 .btn {
-    background: none;
-    border: 0;
-    box-sizing: border-box;
-    margin: 1em;
-    padding: 1em 2em;
-    box-shadow: inset 0 0 0 2px lightgray;
-    font-size: inherit;
-    font-weight: 700;
-    position: relative;
-    vertical-align: middle;
-    outline: none;
-    cursor: pointer;
-    box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.1), 3px 3px 10px rgba(0, 0, 0, 0.3);
-    color: darkgrey;
+	background: none;
+	border: 0;
+	box-sizing: border-box;
+	margin: 1em;
+	padding: 1em 2em;
+	box-shadow: inset 0 0 0 2px lightgray;
+	font-size: inherit;
+	font-weight: 700;
+	position: relative;
+	vertical-align: middle;
+	outline: none;
+	cursor: pointer;
+	box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.1),
+		3px 3px 10px rgba(0, 0, 0, 0.3);
+	color: darkgrey;
 }
 
- .btn::before, .btn::after {
-    box-sizing: inherit;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.btn::before,
+.btn::after {
+	box-sizing: inherit;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
 .draw {
-    transition: color 0.25s;
+	transition: color 0.25s;
 }
- .draw::before, .draw::after {
-	 border: 2px solid transparent;
-	 width: 0;
-	 height: 0;
+.draw::before,
+.draw::after {
+	border: 2px solid transparent;
+	width: 0;
+	height: 0;
 }
- .draw::before {
-	 top: 0;
-	 left: 0;
+.draw::before {
+	top: 0;
+	left: 0;
 }
- .draw::after {
-	 bottom: 0;
-	 right: 0;
+.draw::after {
+	bottom: 0;
+	right: 0;
 }
- .draw:hover {
-	 color: lightgray;
+.draw:hover {
+	color: lightgray;
 }
- .draw:hover::before, .draw:hover::after {
-	 width: 100%;
-	 height: 100%;
+.draw:hover::before,
+.draw:hover::after {
+	width: 100%;
+	height: 100%;
 }
- .draw:hover::before {
-	 border-top-color: #60daaa;
-	 border-right-color: #60daaa;
-	 transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+.draw:hover::before {
+	border-top-color: #60daaa;
+	border-right-color: #60daaa;
+	transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
 }
- .draw:hover::after {
-	 border-bottom-color: #60daaa;
-	 border-left-color: #60daaa;
-	 transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+.draw:hover::after {
+	border-bottom-color: #60daaa;
+	border-left-color: #60daaa;
+	transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+		height 0.25s ease-out 0.75s;
 }
- .meet:hover {
-	 color: aa;
+.meet:hover {
+	color: aa;
 }
- .meet::after {
-	 top: 0;
-	 left: 0;
+.meet::after {
+	top: 0;
+	left: 0;
 }
 
- .meet:hover::before {
-	 border-top-color:rgba(255, 255, 255, 0.1);
-	 border-right-color: rgba(255, 255, 255, 0.1)
+.meet:hover::before {
+	border-top-color: rgba(255, 255, 255, 0.1);
+	border-right-color: rgba(255, 255, 255, 0.1);
 }
- .meet:hover::after {
-	 border-bottom-color: rgba(255, 255, 255, 0.1);
-	 border-left-color: rgba(255, 255, 255, 0.1);
-	 transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+.meet:hover::after {
+	border-bottom-color: rgba(255, 255, 255, 0.1);
+	border-left-color: rgba(255, 255, 255, 0.1);
+	transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
 }
 
 /* media queries */
 /* NAV BAR */
 
 @media screen and (max-width: 640px) {
-    .hero {
-  background-size: 200%;
-    }
+	.hero {
+		background-size: 200%;
+	}
 }
 
 @media screen and (max-width: 480px) {
-    .hero {
-  background-size: 250%;
-    }
+	.hero {
+		background-size: 250%;
+	}
 }
 
 @media screen and (max-width: 440px) {
-    .hero {
-    background-size: 400%;
-    height:5%;
-    }
+	.hero {
+		background-size: 400%;
+		height: 5%;
+	}
 
-    .box{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+	.box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
-    .box {
-        font-size: .8em;
-    }
+	.box {
+		font-size: 0.8em;
+	}
 
-    .box button {
-        margin-top:5em;
-    }
-
-
+	.box button {
+		margin-top: 5em;
+	}
 }
 
-
 @media screen and (max-width: 355px) {
- .box {
-        font-size: .3em;
-    }
+	.box {
+		font-size: 0.3em;
+	}
 }
 
 @media screen and (max-width: 300px) {
-    .hero {
-  background-size: 600%;
-    }
+	.hero {
+		background-size: 600%;
+	}
 }
