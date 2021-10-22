@@ -62,6 +62,7 @@ export class LoginStore extends React.Component {
 					clientId:
 						'827341131046-uhc8lub3mabr335e3qf486e1p4sr6kto.apps.googleusercontent.com',
 					scope: 'email',
+					prompt: 'select_account',
 				})
 				.then(() => {
 					this.auth = window.gapi.auth2.getAuthInstance();
