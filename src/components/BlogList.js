@@ -100,3 +100,12 @@ class BlogList extends React.Component {
 }
 
 export default BlogList;
+
+class Elf {
+	constructor(name, age) {
+		(this.name = name), (this.age = age);
+	}
+	greeting() {
+		console.log(`Hi my name is ${this.name}, I'm ${this.age} years old`);
+	}
+}
