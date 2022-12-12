@@ -51,8 +51,8 @@ class BlogList extends React.Component {
 		});
 	};
 
-	renderedList = () => {
-		const list = this.state.blogs.map((blog, index) => {
+	renderedList = lister => {
+		const list = lister((blog, index) => {
 			if (blog.userId === this.context.userId || blog.showPost === true) {
 				return (
 					<div key={index} className={styles.blog}>
